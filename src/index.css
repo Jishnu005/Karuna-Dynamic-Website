@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background: #fbf5ea;
+    color: #2a2521;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    color: #0e3634;
+    line-height: 1.12;
+  }
+
+  .eyebrow {
+    font-family: "Inter";
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: #c1577a;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    border-radius: 2px;
+  }
+}
